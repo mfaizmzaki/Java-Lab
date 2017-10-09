@@ -12,24 +12,31 @@ import java.util.Scanner;
 public class Q3 {
     public Q3(){
         
+        String woops;
         double commission;
         Scanner keyboard = new Scanner(System.in);
         
         System.out.print("Enter sales volume: ");
         int sales = keyboard.nextInt();
         
-        if(sales <= 100){
+        if(sales < 101){
             commission = 0.05 * sales;
+            woops = "100 or less";
         }
-        else if (sales > 100 && sales <= 500){
+        else if (sales < 501){
             commission = 0.075 * sales;
+            woops = "500 or less";
         }       
-        else if (sales > 500 && sales <= 1000){
+        else if (sales < 1001){
             commission = 0.1 * sales;
+            woops = "1000 or less";
         }
         else
+        {
             commission = 0.125 * sales;
+            woops = "1001 above";
+        }
         
-        System.out.printf("Commission is: %.2f\n", commission);
+        System.out.printf("Commission is: %.2f\n%s\n", commission, woops);
     }
 }

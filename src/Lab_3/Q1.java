@@ -24,28 +24,31 @@ public class Q1 {
         String tempOperand = keyboard.next();
         operand = tempOperand.charAt(0);
         
-        if(operand == '+'){
-            int sum = input1 + input2;
-            System.out.printf("%d %c %d = %d\n", input1, operand, input2, sum);
+        switch (operand) {
+            case '+':
+                int sum = input1 + input2;
+                System.out.printf("%d %c %d = %d\n", input1, operand, input2, sum);
+                break;
+            case '-':
+                int minus = input1 - input2;
+                System.out.printf("%d %c %d = %d\n", input1, operand, input2, minus);
+                break;
+            case '*':
+                int prod = input1 * input2;
+                System.out.printf("%d %c %d = %d\n", input1, operand, input2, prod);
+                break;
+            case '/':
+                int div = input1 / input2;
+                System.out.printf("%d %c %d = %d\n", input1, operand, input2, div);
+                break;
+            case '%':
+                int remainder = input1 % input2;
+                System.out.printf("%d %c %d = %d\n", input1, operand, input2, remainder);
+                break;
+            default:
+                System.out.println("Answer could not be calculated");
+                break;
         }
-        else if(operand == '-'){
-            int minus = input1 - input2;
-            System.out.printf("%d %c %d = %d\n", input1, operand, input2, minus);
-        }
-        else if(operand == '*'){
-            int prod = input1 * input2;
-            System.out.printf("%d %c %d = %d\n", input1, operand, input2, prod);
-        }
-        else if(operand == '/'){
-            int div = input1 / input2;
-            System.out.printf("%d %c %d = %d\n", input1, operand, input2, div);
-        }
-        else if(operand == '%'){
-            int remainder = input1 % input2;
-            System.out.printf("%d %c %d = %d\n", input1, operand, input2, remainder);
-        }
-        else
-        System.out.println("Answer could not be calculated");
         
         
         

@@ -11,6 +11,6 @@ package Lab_3;
  */
 public class Main {
     public static void main(String[] args){
-        Q6 q1 = new Q6(); 
+        Q3 q1 = new Q3(); 
     }
 }
