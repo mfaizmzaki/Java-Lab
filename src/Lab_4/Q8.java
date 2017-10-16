@@ -19,7 +19,7 @@ public class Q8 {
         int status = 1 ;
         int n = rand.nextInt(100)+1;  
         System.out.println("The first " + n + " prime number");
-        System.out.print("2, ");
+        System.out.print("2");
 //        String primeNumber = "";
 //        
 //        for(int i=1; i <= n; i++){
@@ -36,7 +36,8 @@ public class Q8 {
 //        }
 //        System.out.println("The first " + n + " prime number");
 //        System.out.println(primeNumber);
-        for (int i = 2; i <=n;){
+        for (int i = 2; i <= n;){
+            //test for composite number
             for (int j = 2; j <= Math.sqrt(num); j++ ){
                 if ( num%j == 0 ){
                     status = 0;
@@ -45,12 +46,12 @@ public class Q8 {
             }  
             if ( status != 0 )
             {
-                System.out.print(num + " ,");
+                System.out.print(", " +num); 
                 i++;
             }
             status = 1;
-            num++;
+            num++;        
         } 
-
+        System.out.println("");
     }
 }
