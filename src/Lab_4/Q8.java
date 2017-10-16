@@ -11,31 +11,15 @@ import java.util.Random;
  */
 public class Q8 {
     public Q8(){
-        
-   
-        
+  
         Random rand = new Random();
         int num = 3;
         int status = 1 ;
-        int n = rand.nextInt(100)+1;  
+        int n = rand.nextInt(100)+1;
+        
         System.out.println("The first " + n + " prime number");
         System.out.print("2");
-//        String primeNumber = "";
-//        
-//        for(int i=1; i <= n; i++){
-//            int factor = 0;
-//            
-//            for(int num = i; num >= 1; num--){                
-//                if(i%num == 0){
-//                    factor += 1;
-//                }
-//            }
-//            if(factor == 2){
-//                primeNumber = primeNumber + i + " ";
-//            }
-//        }
-//        System.out.println("The first " + n + " prime number");
-//        System.out.println(primeNumber);
+
         for (int i = 2; i <= n;){
             //test for composite number
             for (int j = 2; j <= Math.sqrt(num); j++ ){
@@ -43,7 +27,8 @@ public class Q8 {
                     status = 0;
                     break;
                 }
-            }  
+            }
+            //test for prime
             if ( status != 0 )
             {
                 System.out.print(", " +num); 
