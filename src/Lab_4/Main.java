@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Lab_4;
-import java.util.Scanner;
+
 /**
  *
  * @author mfaizmzaki
@@ -13,7 +13,7 @@ public class Main {
     
     public static void main(String [] args){
             
-         Q7 q = new Q7();
+         Q1 q = new Q1();
     }
     
 }
