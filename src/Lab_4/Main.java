@@ -13,7 +13,7 @@ public class Main {
     
     public static void main(String [] args){
             
-         Q8 q = new Q8();
+         Q7 q = new Q7();
     }
     
 }

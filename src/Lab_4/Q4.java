@@ -23,7 +23,7 @@ public class Q4 {
        System.out.print("Enter day : [0- Sunday, 1-Monday, ...] ");
        day = k.nextInt();
        
-       for(int i=1; i<=MAX; i++) {
+       for(int i=1; i <= MAX; i++) {
            if (i==MIN) {
                System.out.println("May " + year);
                System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat  ");

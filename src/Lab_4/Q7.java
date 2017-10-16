@@ -14,7 +14,7 @@ public class Q7 {
     public Q7(){
         
         double principal, monthlyPayment, interest, principalDue, interestDue, principalBalance, totalInterest=0;
-        int totalMonth, totalMonthPay=1;
+        int totalMonth;
         
         Scanner k = new Scanner(System.in);
         System.out.print("Enter principal amount: ");

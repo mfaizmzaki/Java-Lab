@@ -14,7 +14,7 @@ public class Q5 {
     
     public Q5(){
         
-        int player1=0, player2=0, dice;
+        int player1 = 0, player2 = 0, dice;
         Random g = new Random();
         
         game:{
